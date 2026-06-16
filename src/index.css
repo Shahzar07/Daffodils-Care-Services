@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Fira+Code:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #233D04;
+  --color-primary-dark: #122101;
+  --color-primary-light: #f3f6ee;
+  --color-primary-border: #d4e0c4;
+  
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-mono: "Fira Code", monospace;
+  
+  --shadow-elegant: 0 10px 30px -10px rgba(35, 61, 4, 0.12), 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #fcfdfb;
+}
+
+/* Base custom classes to match theme */
+input[type="text"], 
+input[type="email"], 
+input[type="tel"], 
+input[type="number"], 
+input[type="date"], 
+select, 
+textarea {
+  font-family: var(--font-sans);
+  border-color: #e2e8f0;
+}
+
+input:focus, 
+select:focus, 
+textarea:focus {
+  outline: none;
+  border-color: #233D04 !important;
+  box-shadow: 0 0 0 3px rgba(35, 61, 4, 0.15) !important;
+}
+
+/* Color Mappings to translate legacy layout codes into #233D04 */
+.border-blue-600 {
+  border-color: #233D04 !important;
+}
+.bg-blue-600 {
+  background-color: #233D04 !important;
+}
+.hover\:bg-blue-700:hover {
+  background-color: #122101 !important;
+}
+.text-blue-600 {
+  color: #233D04 !important;
+}
+.text-blue-900 {
+  color: #122101 !important;
+}
+.bg-blue-50 {
+  background-color: #f3f6ee !important;
+}
+.border-blue-100 {
+  border-color: #d4e0c4 !important;
+}
+
+/* Emerald utility translation */
+.text-emerald-700 {
+  color: #233D04 !important;
+}
+.bg-emerald-800 {
+  background-color: #233D04 !important;
+}
+.bg-emerald-900 {
+  background-color: #122101 !important;
+}
+.accent-emerald-650 {
+  accent-color: #233D04 !important;
+}
+.accent-emerald-600 {
+  accent-color: #233D04 !important;
+}
+.hover\:bg-emerald-50:hover {
+  background-color: #f3f6ee !important;
+}
+.bg-emerald-50 {
+  background-color: #f3f6ee !important;
+}
+.border-emerald-100 {
+  border-color: #d4e0c4 !important;
+}
+.text-emerald-950 {
+  color: #122101 !important;
+}
+
+/* Global button focus adjustments */
+button:focus {
+  outline: none;
+}
